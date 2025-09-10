@@ -6,10 +6,10 @@
   <title>Gabriella Ngang | Portfolio</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  
-  <!-- Icons (Font Awesome) -->
-  <script src="https://kit.fontawesome.com/2f4725b5e9.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Quicksand:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- Icons (Font Awesome via CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     body {
@@ -18,28 +18,27 @@
       padding: 0;
       background-color: #fdf8f7; /* soft off-white */
       color: #333;
+      text-align: center; /* centers text by default */
     }
 
     header {
       background-color: #f8d7da; /* light pink */
-      padding: 1.5rem;
-      text-align: center;
+      padding: 2rem 1rem;
       border-bottom: 2px solid #f0c2c5;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
       color: #d17b88;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
+      font-family: 'Sacramento', cursive; /* Chic handwritten look */
     }
 
     header p {
       margin: 0.5rem 0 0;
       font-size: 1.2rem;
       color: #555;
-      font-family: 'Quicksand', sans-serif;
+      font-family: 'Josefin Sans', sans-serif;
     }
 
     nav {
@@ -51,7 +50,7 @@
       text-decoration: none;
       color: #d17b88;
       font-weight: 600;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Josefin Sans', sans-serif;
       transition: color 0.3s;
     }
 
@@ -60,22 +59,22 @@
     }
 
     section {
-      padding: 3rem 12%;
+      padding: 3rem 10%;
     }
 
     section h2 {
-      text-align: center;
       color: #d17b88;
       margin-bottom: 1.5rem;
       font-size: 2rem;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Josefin Sans', sans-serif;
     }
 
     .card {
       background-color: #fff;
       border-radius: 14px;
       padding: 1.5rem;
-      margin: 1rem 0;
+      margin: 1rem auto;
+      max-width: 700px;
       box-shadow: 0 3px 8px rgba(0,0,0,0.08);
       font-family: 'Quicksand', sans-serif;
     }
@@ -84,10 +83,10 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1rem;
+      justify-items: center;
     }
 
     footer {
-      text-align: center;
       background-color: #f8d7da;
       padding: 1rem;
       margin-top: 2rem;
@@ -103,7 +102,7 @@
       padding: 0.6rem 1.2rem;
       border-radius: 8px;
       text-decoration: none;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Josefin Sans', sans-serif;
       font-weight: 600;
       transition: background 0.3s;
     }
@@ -113,10 +112,14 @@
     }
 
     /* Contact section icons */
+    .contact-icons {
+      margin: 1rem 0;
+    }
+
     .contact-icons a {
-      margin: 0 15px;
+      margin: 0 20px;
       color: #d17b88;
-      font-size: 2rem;
+      font-size: 2.2rem;
       transition: color 0.3s;
     }
 
@@ -188,18 +191,11 @@
 
   <section id="contact">
     <h2>Contact Me</h2>
-    <div class="card" style="text-align: center;">
+    <div class="card">
       <div class="contact-icons">
         <a href="mailto:gabbyngang@gmail.com"><i class="fas fa-envelope"></i></a>
         <a href="tel:+12489100422"><i class="fas fa-phone"></i></a>
         <a href="http://www.linkedin.com/in/gabriella-ngang-0286201aa" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
-      <a href="mailto:gabbyngang@gmail.com" class="button">Say Hello</a>
-    </div>
-  </section>
+      <a href=
 
-  <footer>
-    <p>© 2025 Gabriella Ngang | Built with 💕 and code</p>
-  </footer>
-</body>
-</html>
