@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriella Ngang | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf8f7; /* soft off-white */
+      color: #333;
+    }
+
+    header {
+      background-color: #f8d7da; /* light pink */
+      padding: 1.5rem;
+      text-align: center;
+      border-bottom: 2px solid #f0c2c5;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: #d17b88;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #d17b88;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 3rem 15%;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #d17b88;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    }
+
+    .skills-list, .projects-list, .achievements-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f8d7da;
+      padding: 1rem;
+      margin-top: 2rem;
+      color: #555;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #d17b88;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    a.button:hover {
+      background: #c16a76;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gabriella Ngang</h1>
+    <p>Computer Science Student | Web Developer | Tech Enthusiast</p>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        Hi! I’m Gabriella, a Computer Science major at Wayne State University with a minor in Business Administration. 
+        I’m passionate about web development, AI, and creating projects that combine design with functionality. 
+        Outside of tech, I love LEGOs, tea, and exploring creative hobbies.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="card"><strong>Languages:</strong> Python, JavaScript, C++, HTML, CSS</div>
+      <div class="card"><strong>Tools:</strong> GitHub, Replit, Siemens NX, Code.org</div>
+      <div class="card"><strong>Interests:</strong> AI/ML, Game Development, Web Apps</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-list">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Built a responsive personal portfolio using HTML, CSS, and JavaScript to showcase my work.</p>
+      </div>
+      <div class="card">
+        <h3>Information State App</h3>
+        <p>Developed a web app displaying data on all 50 U.S. states with over 400 data points, using JavaScript for interactivity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="achievements-list">
+      <div class="card">
+        <h3>NCWIT Michigan Affiliate Winner</h3>
+        <p>Recognized for creativity and technical proficiency in statewide competition (2024).</p>
+      </div>
+      <div class="card">
+        <h3>Code.org Ambassador</h3>
+        <p>Promoted computer science education by leading 10+ workshops for 200+ students.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card" style="text-align: center;">
+      <p>Email: <a href="mailto:gabbyngang@gmail.com">gabbyngang@gmail.com</a></p>
+      <p>Phone: 248-910-0422</p>
+      <p>LinkedIn: <a href="http://www.linkedin.com/in/gabriella-ngang-0286201aa" target="_blank">My Profile</a></p>
+      <a href="mailto:gabbyngang@gmail.com" class="button">Say Hello</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Gabriella Ngang | Built with 💕 and code</p>
+  </footer>
+</body>
+</html>
