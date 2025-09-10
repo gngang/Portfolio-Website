@@ -6,7 +6,7 @@
   <title>Gabriella Ngang | Portfolio</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Quicksand:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Quicksand:wght@400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 
   <!-- Icons (Font Awesome via CDN) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -18,20 +18,44 @@
       padding: 0;
       background-color: #fdf8f7; /* soft off-white */
       color: #333;
-      text-align: center; /* centers text by default */
+      text-align: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Decorative hibiscus accents */
+    body::before, body::after {
+      content: "🌺";
+      position: absolute;
+      font-size: 4rem;
+      color: #f8d7da;
+      opacity: 0.6;
+      z-index: -1;
+    }
+    body::before {
+      top: 20px;
+      left: 20px;
+      transform: rotate(-20deg);
+    }
+    body::after {
+      bottom: 20px;
+      right: 20px;
+      transform: rotate(15deg);
     }
 
     header {
       background-color: #f8d7da; /* light pink */
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
       border-bottom: 2px solid #f0c2c5;
+      position: relative;
     }
 
     header h1 {
       margin: 0;
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: #d17b88;
-      font-family: 'Sacramento', cursive; /* Chic handwritten look */
+      font-family: 'Dancing Script', cursive; /* Chic handwritten */
+      font-weight: 600;
     }
 
     header p {
@@ -92,6 +116,7 @@
       margin-top: 2rem;
       color: #555;
       font-family: 'Quicksand', sans-serif;
+      position: relative;
     }
 
     a.button {
@@ -197,5 +222,12 @@
         <a href="tel:+12489100422"><i class="fas fa-phone"></i></a>
         <a href="http://www.linkedin.com/in/gabriella-ngang-0286201aa" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
-      <a href=
+      <a href="mailto:gabbyngang@gmail.com" class="button">Say Hello</a>
+    </div>
+  </section>
 
+  <footer>
+    <p>© 2025 Gabriella Ngang | Built with 💕 and code</p>
+  </footer>
+</body>
+</html>
