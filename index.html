@@ -4,9 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gabriella Ngang | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Icons (Font Awesome) -->
+  <script src="https://kit.fontawesome.com/2f4725b5e9.js" crossorigin="anonymous"></script>
+
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Quicksand', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #fdf8f7; /* soft off-white */
@@ -22,14 +29,17 @@
 
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       color: #d17b88;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
     }
 
     header p {
       margin: 0.5rem 0 0;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       color: #555;
+      font-family: 'Quicksand', sans-serif;
     }
 
     nav {
@@ -41,25 +51,33 @@
       text-decoration: none;
       color: #d17b88;
       font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c16a76;
     }
 
     section {
-      padding: 3rem 15%;
+      padding: 3rem 12%;
     }
 
     section h2 {
       text-align: center;
       color: #d17b88;
       margin-bottom: 1.5rem;
-      font-size: 1.8rem;
+      font-size: 2rem;
+      font-family: 'Poppins', sans-serif;
     }
 
     .card {
       background-color: #fff;
-      border-radius: 12px;
+      border-radius: 14px;
       padding: 1.5rem;
       margin: 1rem 0;
       box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      font-family: 'Quicksand', sans-serif;
     }
 
     .skills-list, .projects-list, .achievements-list {
@@ -74,6 +92,7 @@
       padding: 1rem;
       margin-top: 2rem;
       color: #555;
+      font-family: 'Quicksand', sans-serif;
     }
 
     a.button {
@@ -84,11 +103,25 @@
       padding: 0.6rem 1.2rem;
       border-radius: 8px;
       text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
       transition: background 0.3s;
     }
 
     a.button:hover {
       background: #c16a76;
+    }
+
+    /* Contact section icons */
+    .contact-icons a {
+      margin: 0 15px;
+      color: #d17b88;
+      font-size: 2rem;
+      transition: color 0.3s;
+    }
+
+    .contact-icons a:hover {
+      color: #c16a76;
     }
   </style>
 </head>
@@ -156,9 +189,11 @@
   <section id="contact">
     <h2>Contact Me</h2>
     <div class="card" style="text-align: center;">
-      <p>Email: <a href="mailto:gabbyngang@gmail.com">gabbyngang@gmail.com</a></p>
-      <p>Phone: 248-910-0422</p>
-      <p>LinkedIn: <a href="http://www.linkedin.com/in/gabriella-ngang-0286201aa" target="_blank">My Profile</a></p>
+      <div class="contact-icons">
+        <a href="mailto:gabbyngang@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+12489100422"><i class="fas fa-phone"></i></a>
+        <a href="http://www.linkedin.com/in/gabriella-ngang-0286201aa" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
       <a href="mailto:gabbyngang@gmail.com" class="button">Say Hello</a>
     </div>
   </section>
